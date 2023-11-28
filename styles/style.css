@@ -1,5 +1,94 @@
+.page {
+  background-image: url(../images/cover-image-dark.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  padding: 10px;
+}
+/* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
-.page {
-  /* сохраните в разметке и стилях класс page. На его основе работает скрипт. */
+.header {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  
+}
+
+.header__theme-menu {
+  display: grid;
+  justify-items: end;
+  align-items: end;
+  color: #FF0070;
+  text-align: center;
+  font-family: IBM Plex Mono;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 18px; /* 100% */
+}
+
+.header__theme-menu-button_active {
+  pointer-events: none
+}
+
+.main__title {
+  color: #DB00FF;
+  text-shadow: 4px 4px 0px #FF0070;
+  font-family: IBM Plex Mono;
+  font-size: 116px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 82.5%; /* 95.7px */
+  margin-bottom: 55px;
+  margin-top: 66,5px;
+}
+
+.cover__description {
+  max-height: 117px;
+}
+
+
+/* Контент*/
+
+.title {
+  color: #FF0070;
+font-family: IBM Plex Mono;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 23.4px; /* 130% */
+}
+
+.title-decor {
+  color: #000028;
+font-family: IBM Plex Mono;
+font-size: 18px;
+font-style: normal;
+font-weight: 700;
+line-height: 23.4px; /* 130% */
+background-color: #FF0070;
+}
+
+.explain {
+  color: #F1B2CE;
+font-family: IBM Plex Mono;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 23.4px; /* 130% */
+}
+
+.link {
+  text-shadow: 1px 1px 0px #FF0070;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.recommendations__point {
+font-weight: 400;
+}
+
+.footer__title {
+text-shadow: 2px 2px 0px #FF0070;
 }
