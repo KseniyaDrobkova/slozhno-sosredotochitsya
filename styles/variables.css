@@ -1,3 +1,26 @@
+:root {
+  --accent-color: #FF0070;
+  --main-title-color: #DB00FF;
+  --shadow-color: #FF0070;
+  --paragraph-color: #000028;
+  --bg-paragraph-color: #FF0070;
+  --title-color: #FF0070;
+  --point-color: #000028;
+  --bg-point-color: #FF0070;
+  --text-color: #F1B2CE;
+  --main-bg-color: #000028;
+  --shadow-link-color: #FF0070;
+  --hover-button-color: #ff99c6;
+  --hover-link-color: #F1B2CE;
+  --focus-button-color: #FF0070; 
+  --focus-link-color: #F1B2CE;
+  --main-font: IBM Plex mono;
+  --main-font-size: 18px;
+  --size-s: 10px;
+  --size-m: 20px;
+}
+
+
 /*
   Переменные для вашего проекта
   и их переопределение под различные устройства

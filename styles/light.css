@@ -1,86 +1,64 @@
 .page.theme_light {
+  --accent-color: #353430;
+  --main-title-color: #ffc2e6;
+  --shadow-color: #ff8dcb;
+  --paragraph-color: #353430;
+  --bg-paragraph-color: #ff8dcb;
+  --title-color: #353430;
+  --point-color: #353430;
+  --bg-point-color: #ff8dcb;
+  --text-color: #353430;
+  --main-bg-color: #fff1f7;
+  --shadow-link-color: #ff8dcb;
+  --hover-button-color: #adadab;
+  --hover-link-color: #353430;
+  --focus-button-color: #353430;
+  --focus-link-color: #353430;
   background-image: url(../images/cover-image-light.png);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  padding: 10px;
- 
+  background-color: var(--main-bg-color, #fff1f7);
 }
 
-.header__theme-menu.theme_light {
-  color: #353430;
-  text-align: center;
-  font-family: IBM Plex Mono;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 18px; /* 100% */
+.theme_light .decor-element {
+  visibility: hidden;
 }
 
-.main__title.theme_light {
-  color: #FFC2E6;
-text-shadow: 4px 4px 0px #FF8DCB;
-font-family: IBM Plex Mono;
-font-size: 116px;
-font-style: normal;
-font-weight: 700;
-line-height: 82.5%; /* 95.7px */
-}
-
-.cover__description.theme_light {
-  color: #353430;
-font-family: IBM Plex Mono;
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: 23.4px; /* 130% */
-background-color: #FF8DCB;
-}
-
-/* Контент*/
-
-.title.theme_light {
-  color: #353430;
-font-family: IBM Plex Mono;
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: 23.4px; /* 130% */
-}
-
-.point.theme_light {
-  color: #353430;
-font-family: IBM Plex Mono;
-font-size: 18px;
-font-style: normal;
-font-weight: 700;
-line-height: 23.4px; /* 130% */
-background-color: #FF8DCB;
-}
-
-.explain.theme_light {
-  color: #353430;
-font-family: IBM Plex Mono;
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 23.4px; /* 130% */
-}
-
-.recommendations__point.theme_light {
-  font-weight: 400;
+@media (prefers-color-scheme: light) {
+  :root {
+    --accent-color: #353430;
+    --main-title-color: #ffc2e6;
+    --shadow-color: #ff0070;
+    --paragraph-color: #353430;
+    --bg-paragraph-color: #ff8dcb;
+    --title-color: #353430;
+    --point-color: #353430;
+    --bg-point-color: #ff8dcb;
+    --text-color: #353430;
+    --main-bg-color: #fff1f7;
+    --shadow-link-color: #ff8dcb;
+    --hover-button-color: #adadab;
+    --hover-link-color: #353430;
+    --focus-button-color: #353430;
+    --focus-link-color: #353430;
+  }
+  .decor-element {
+    visibility: hidden;
   }
 
-.footer__title.theme_light {
-  text-shadow: 2px 2px 0px #FF8DCB;
+  .page {
+    background-image: url(../images/cover-image-light.png);
+  }
 }
- /* сохраните этот селектор в приведённом виде.
+
+/* сохраните этот селектор в приведённом виде.
     Так стили написанные ниже будут иметь больший вес,
     чем стили в медиазапросе предпочтений пользователя
-  */
+  
 
-  /*
+/*
   Специально для светлой темы при наличии класса.
   Здесь окажутся стили, которые нужно переопределить принудительно,
   переключая тему
