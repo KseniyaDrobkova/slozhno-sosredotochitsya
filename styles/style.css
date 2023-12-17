@@ -1,6 +1,6 @@
 .page {
   background-color: var(--main-bg-color, #000028);
-  background-image: url(../images/cover-image-dark.png);
+  background-image: var(--bg-image);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -18,10 +18,9 @@
   justify-items: end;
   height: 100vh;
   padding: var(--size-s, 10px);
-  min-height: 668px;
 }
 
-.header:before {
+.decorated-zone:before {
   position: absolute;
   content: "";
   width: 25px;
@@ -36,7 +35,7 @@
   position: absolute;
   text-align: end;
   color: var(--accent-color, #ff0070);
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, monospace);
   font-size: var(--main-font-size, 18px);
   font-style: normal;
   font-weight: 400;
@@ -44,6 +43,7 @@
   visibility: visible;
   top: var(--size-s, 10px);
   right: 38px;
+  text-transform: uppercase;
 }
 
 .decor-element::after {
@@ -59,9 +59,9 @@
 }
 
 .header__theme-menu {
-  color: var(--bg-color, var(--accent-color, #ff0070));
+  color: var(--accent-color, #ff0070);
   text-align: center;
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, monospace);
   font-size: var(--main-font-size, 18px);
   font-style: normal;
   font-weight: 400;
@@ -108,14 +108,14 @@
 .main__title {
   color: var(--main-title-color, #db00ff);
   text-shadow: 4px 4px 0px var(--shadow-color, #ff0070);
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, monospace);
   font-style: normal;
   font-size: clamp(7.25rem, 7.0115rem + 1.0178vw, 7.5rem);
   font-weight: 700;
   line-height: 82.5%; /* 95.7px */
 }
 
-.header::after {
+.decorated-zone::after {
   position: absolute;
   content: "";
   width: 25px;
@@ -130,7 +130,7 @@
 
 .title {
   color: var(--title-color, #ff0070);
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, monospace);
   font-size: var(--main-font-size, 18px);
   font-style: normal;
   font-weight: 700;
@@ -139,7 +139,7 @@
 
 .title-decor {
   color: var(--point-color, #000028);
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, monospace);
   font-size: var(--main-font-size, 18px);
   font-style: normal;
   font-weight: 700;
@@ -149,7 +149,7 @@
 
 .explain {
   color: var(--text-color, #f1b2ce);
-  font-family: var(--main-font, sans-serif);
+  font-family: var(--main-font, monospace);
   font-size: var(--main-font-size, 18px);
   font-style: normal;
   font-weight: 400;
@@ -246,41 +246,19 @@
 .footer {
   position: relative;
   display: grid;
-  min-height: 667px;
   padding: var(--size-s, 10px);
   height: 100vh;
   align-items: center;
+  justify-content: center;
 }
 
 .footer__title {
   text-shadow: 2px 2px 0px var(--shadow-color, #ff0070);
 }
 
-.footer::before {
-  position: absolute;
-  content: "";
-  width: 25px;
-  height: 25px;
-  border-top: 1px solid var(--accent-color, #ff0070);
-  border-right: 1px solid var(--accent-color, #ff0070);
-  right: var(--size-s, 10px);
-  top: var(--size-s, 10px);
-}
-
-.footer::after {
-  position: absolute;
-  content: "";
-  width: 25px;
-  height: 25px;
-  border-bottom: 1px solid var(--accent-color, #ff0070);
-  border-left: 1px solid var(--accent-color, #ff0070);
-  bottom: var(--size-s, 10px);
-  left: var(--size-s, 10px);
-  text-align: center;
-}
 
 @media (width >= 768px) {
-  .header::before {
+  .decorated-zone::before {
     top: 25px;
     right: var(--size-m, 20px);
   }
@@ -290,14 +268,13 @@
     right: 48px;
   }
 
-  .header::after {
+  .decorated-zone::after {
     bottom: var(--size-m, 20px);
     left: var(--size-m, 20px);
   }
 
   .header {
     padding: var(--size-m, 20px);
-    min-height: 1024px;
     height: 100vh;
     display: grid;
     justify-items: start;
@@ -381,26 +358,14 @@
 
   .footer {
     padding: var(--size-m, 20px);
-    min-height: 1024px;
     height: 100vh;
     display: grid;
     justify-items: center;
-  }
-
-  .footer::before {
-    top: var(--size-m, 20px);
-    right: var(--size-m, 20px);
-  }
-
-  .footer::after {
-    bottom: var(--size-m, 20px);
-    left: var(--size-m, 20px);
   }
 }
 
 @media (width >= 1024px) {
   .header {
-    min-height: 768px;
     height: 100vh;
   }
 
@@ -438,7 +403,6 @@
   }
 
   .footer {
-    min-height: 768px;
     height: 100vh;
   }
 

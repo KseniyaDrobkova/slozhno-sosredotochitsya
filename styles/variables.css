@@ -10,14 +10,15 @@
   --text-color: #F1B2CE;
   --main-bg-color: #000028;
   --shadow-link-color: #FF0070;
-  --hover-button-color: #ff99c6;
+  --hover-button-color: rgba(255, 0, 112, 0.40);
   --hover-link-color: #F1B2CE;
   --focus-button-color: #FF0070;
   --focus-link-color: #F1B2CE;
-  --main-font: IBM Plex mono;
+  --main-font: "IBM Plex mono";
   --main-font-size: 18px;
   --size-s: 10px;
   --size-m: 20px;
+  --bg-image: url(../images/cover-image-dark.png);
 }
 
 

@@ -43,13 +43,14 @@
     --hover-link-color: #353430;
     --focus-button-color: #353430;
     --focus-link-color: #353430;
+    --bg-image: url(../images/cover-image-light.png);
   }
   .decor-element {
     visibility: hidden;
   }
 
   .page {
-    background-image: url(../images/cover-image-light.png);
+    background-image: var(--bg-image);
   }
 }
 
